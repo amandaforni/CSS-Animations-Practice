@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+#wrapper{
+    height: 100;
+    width: 100;
+    background-image: url("background1.jpg");
+    background-position: 0px 0px;
+    background: stretch;
+    background-repeat: no-repeat;
+    animation: animatedBackground 15s infinite linear;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+}
+
+#dolphin {
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    float: right;
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    transform: rotate(20deg);
+    animation: dolphin 5s infinite alternate;
+}
+
+@keyframes dolphin{
+    0%{
+    right: 100px;
+    bottom: 70px;
+    opacity: 80%;
+    }
+
+    20%{
+    right: 200px;
+    bottom: 200px;
+    opacity: 90%;
+    }
+
+    40%{
+        right: 100px;
+        bottom: 250px;
+        opacity: 100%;
+    }
+    60%{
+        right: 100px;
+        bottom: 150px;
+        opacity: 40%;
+    }
+    80%{
+        right: 50px;
+        bottom: 100px;
+        opacity: 30%;
+    }
+    100%{
+        right:80px;
+        bottom: 80px;
+        opacity: 15%;
+    }
+}
+
+.return{
+    float: right;
+    font-family: 'Sansita Swashed', cursive;
+    padding: 20px;
+}
+
+.return:hover{
+    opacity: 50%;
+    color: #fff;
+    border: 60px black;
+ }
+
+.buttons{
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#cnlogo:hover{
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(360deg);
+    background-color: #6D1A36;
+    color: #FEEBD7;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 15px;
+  
+}
+
+a:link{
+    text-decoration: none;
+    color:#6D1A36;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 15px;
+}
+a:active{
+    color: #FEEBD7;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 15px;
+}
+
+a:visited{
+    color:#63535B;
+    text-decoration: oblique;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 15px;
+}
+
+#website{
+    width: 100px;
+    height: 100px;
+    background-color: #B1B695;
+    box-shadow: 0px 8px 15px #53917E;
+    
+}
+
+#website:hover{
+    animation-name: UD;
+    animation-duration: 1.5s;
+}
+
+@keyframes UD{
+    0%{
+        transform: rotateY(0deg)
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+
+#fb{
+    width: 100px;
+    height: 100px;
+    background: #B1B695;
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px #53917E;
+}
+
+#fb:hover{
+    animation-name: fbhover;
+    animation-duration: 3s;
+}
+
+@keyframes fbhover{
+    0%{
+        background-color: #A4CBBF;
+        box-shadow: 6px 6px 0 #345B4F;
+    }
+    50%{
+        background-color: #BEB1B8;
+        box-shadow: 6px 6px 0 #43383E;
+    }
+    100%{
+        background-color: whitesmoke;
+        box-shadow: 6px 6px 0 #6D1A36;
+    }
+}
+
+#twitter{
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #B1B695;
+    border-left: 60px solid #B1B695;
+    border-bottom: 60px solid #B1B695;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0px 8px 15px  #53917E;
+
+}
+
+#twitter:hover{
+    letter-spacing: 5px;
+    bottom: auto;
+    top: 0;
+    width: 70%;
+    background-color: olive;
+
+}
+
+#ig{
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background-color: #B1B695;
+    box-shadow: 0px 8px 15px  #53917E;
+}
+
+#ig:hover{
+   opacity: 50%;
+   color: #fff;
+   transform: rotateY(360deg);
+}
+
+
+/*@keyframes button1{
+    0%{
+        transform: rotate(0deg);
+        background-color: darksalmon;
+        color: blue;
+    }
+    50%{
+        transform: rotate(180deg);
+        background-color: orange;
+        color: darkslategray;
+    }
+    100%{
+        transform: rotate(360deg);
+        background-color: white;
+        color: black;
+    }
+}
+
+
+
+/*@keyframes button{    
+ 0%{
+     background-color: blueviolet;
+     box-shadow: 6px 6px 0 darkgrey;
+ }
+ 50%{
+     background-color: darkorange;
+     box-shadow: 6px 6px 0 darksalmon;
+ }
+ 100%{
+     background-color: whitesmoke;
+     box-shadow: 6px 6px 0 black;
+ }
+} */
+
+
